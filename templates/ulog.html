@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock css %}
+
+{% block title %} login {% endblock title %}
+
+{% block body %}
+<br><br>
+    <h3>Welcome!!!</h3>
+    <h3>Make login and enjoy the features </h3>
+    <div class ="content">
+        <div class="login">
+        <form method="POST" action="">
+            {% csrf_token %}
+            <center>
+                <br>
+                <h4>login For Customers</h3>
+            <div class="inputdata">
+                <input class="input_comp" style="font-size: large;" type="text" placeholder="Username" name="username" required>
+                <br><br>
+                <input class="input_comp" style="font-size: large;" type="password" placeholder="password" name="password" required>
+                <br><br>
+                <input type="submit" class="btn btn-success"> 
+            </div>
+            <br>
+            <a href="{% url 'ureg' %}" class="btn btn-primary">Signup</a>
+            <br><br><a href="{% url 'ureset' %}">Forget password</a>
+
+        
+        </form>
+        <br><br>
+        <div>
+            {% for msg in messages %}
+                <h5>{{msg}}</h5>
+            {% endfor %}
+        </div>
+    </center>
+        </div>
+
+    </div>
+{% endblock body %}

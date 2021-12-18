@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Register{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+{% endblock css %}
+
+{% block body %}
+    <br>
+    <br>
+    <h3>Create account and make use of all the features of the website</h3>
+    <h2>Retailer role</h2>
+    <center>
+        <form action="scholarregister" method="POST">
+            {% csrf_token %}
+            <br>
+            <br>
+            <input type="text" name="first_name" style="color: red; font-family: sans-serif; background-color: rgb(171, 240, 245); font-size: large;" placeholder="First Name" required>
+            <br>
+            <br>
+            <input type="text" name="last_name" style="color: red; background-color: rgb(171, 240, 245); font-family: sans-serif; font-size: large;" placeholder="Last Name" required>
+            <br><br>
+            <input type="text" name="username" style="color: red; background-color: rgb(171, 240, 245); font-family: sans-serif; font-size: large;" placeholder="Username" required>
+            <br><br>
+            <input type="text" name="email" style="color: red; background-color: rgb(171, 240, 245); font-family: sans-serif; font-size: large;" placeholder="Email" required>
+            <br><br>
+            <input type="password" name="password1" style="color: red; background-color: rgb(171, 240, 245); font-family: sans-serif; font-size: large;" placeholder="Password" required>
+            <br><br>
+            <input type="password" name="password2" style="color: red; background-color: rgb(171, 240, 245);  font-family: sans-serif; font-size: large;" placeholder="Confirm password" required>
+            <br><br>
+            <input type="submit" class="btn btn-success">
+            <br>
+            <br>
+            <a href="{% url 'ureg' %}" class="btn btn-outline-primary">Back to login</a>
+        </form>
+
+        <div>
+            {% for msg in messages %}
+                <h5>{{msg}}</h5>
+            {% endfor %}
+        </div>
+    </center>
+
+{% endblock body %}
