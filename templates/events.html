@@ -1,0 +1,32 @@
+{% extends 'admin_dashboard.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/events.css' %}">    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+{% endblock css %}
+
+{% block title %} login {% endblock title %}
+
+{% block content %}
+<div class="contain">
+<div class="row">
+    {% for  e in e_list %}
+    <div class="col-lg-4">
+        <div class="boxdesign">
+                <center><h6>NAME:   <strong>{{e.e_name}}</strong></h6>
+                <h6>VENUE:   <strong>{{e.venue}}</strong></h6>
+                <h6>LAST DATE:   <strong>{{e.last_date}}</strong></h6>
+                <h6>SPEAKER:   <strong>{{e.e_speaker}}</strong></h6>
+                <h6>DATE OF EVENT:   <strong>{{e.e_date}}</strong></h6>
+                <h6>TIMING:   <strong>{{e.timing}}</strong></h6>
+                <h6>VENUE:   <strong>{{e.venue}}</strong></h6>
+                <h6>LINK:  <strong>{{e.e_link}}</strong></h6>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+{% endblock content %}
