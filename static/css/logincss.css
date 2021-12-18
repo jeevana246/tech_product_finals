@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body{
+    background-image: url("https://t4.ftcdn.net/jpg/01/19/11/55/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    margin-top: 8%;
+    align-items: center;
+    padding: 10px;
+    margin-left: 60%;
+}
+
+.login{
+    width: 450px;
+    height: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:rgb(56, 196, 231);
+    border-style: solid;
+
+}
+
+.input_comp{
+    color: red;
+}
+
+h3{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin-left: 45%;
+}
+
+h4{
+    color: crimson;
+    font-family: fantasy;
+}
+
+h5{
+    color: rgb(220, 50, 20);
+}
+
+h6{
+    color: darkgreen;
+}
+
+p{
+    color: rgb(74, 6, 104);
+}

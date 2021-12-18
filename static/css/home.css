@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body{
+    background-image: url("https://i.pinimg.com/originals/d6/be/9b/d6be9baca17533c317a98edf088210c9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h3{
+    font-family: 'Abril Fatface', cursive;
+    color: darkgreen;
+}
+
+h4{
+    font-family: 'Pacifico', cursive;
+    color: darkblue
+}
+
+h5{
+    color:darkred;
+    font-family: 'Righteous', cursive;
+}
