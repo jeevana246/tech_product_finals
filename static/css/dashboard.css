@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+
+.table-box{
+    margin: 50px auto;
+}
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+
+    color: rgb(17, 4, 92);
+    font-size: 13px;
+    box-shadow: 0 6px 7px 0 rgb(250, 80, 80);
+
+}
+.table-cell{
+    display: table-cell;
+    width: 15%;
+    text-align: center;
+
+    border-right: 1px solid rgb(131, 3, 3);
+    vertical-align: middle;
+    font-size: 15px;
+    color: rgb(16, 8, 128);
+    font-family: 'Courgette', cursive;
+}
+
+#head{
+    margin-bottom: 80px;
+    box-shadow: 0 6px 7px 0 rgb(17, 4, 92);
+}

@@ -1,0 +1,16 @@
+body{
+    background-image: url("https://wallpaperbat.com/img/384113-light-pink-wallpaper-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3{
+    color: blue;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.input_var{
+    color: darkolivegreen;
+    font-family: sans-serif;
+}

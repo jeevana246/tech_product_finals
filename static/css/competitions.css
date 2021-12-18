@@ -1,0 +1,7 @@
+.boxdesign{
+    border-radius: 2px;
+    box-shadow:hsl(81, 93%, 39%) 0 0 16px;
+    margin: 40px;
+    padding: 20px;
+    background-color: rgb(250, 101, 95);
+}

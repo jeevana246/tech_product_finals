@@ -1,0 +1,7 @@
+.boxdesign{
+    border-radius: 2px;
+    margin: 40px;
+    padding: 20px;
+    background-color: rgb(211, 252, 184);
+    color: red;
+}
